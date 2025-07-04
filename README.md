@@ -1,88 +1,97 @@
-🔍 Description
-This project is a basic simulation of an online store backend system built using C++ and Standard Template Library (STL) containers. It demonstrates how real-world e-commerce operations can be modeled with STL data structures such as vector, deque, list, set, map, and unordered_map.
 
-The application covers:
+# 📦 Simple Online Store Management (C++ STL Project)
 
-Managing a list of products and categories
+## 📖 Description
 
-Maintaining order history
+This project is a **console-based simulation** of an online store management system built using **C++17** and STL (Standard Template Library).  
+It showcases how to model a mini e-commerce backend system using various C++ data structures.
 
-Tracking customer data
+---
 
-Handling product stock
+## 🧠 Features
 
-Simulating recent customer interactions
+- 🛍️ **Manage Products** – Store product info (ID, name, category)
+- 👥 **Track Recent Customers** – Using `deque`
+- 🧾 **Order History** – Store orders with timestamps using `list`
+- 🏷️ **Product Categories** – Store unique categories using `set`
+- 📦 **Inventory Management** – Stock tracking with `map`
+- 📊 **Customer Order Mapping** – Using `multimap`
+- 🔎 **Customer Data Storage** – Fast access via `unordered_map`
+- 🔐 **Unique Product IDs** – Ensured via `unordered_set`
 
-It is ideal for learning or demonstrating your understanding of STL containers in C++.
+---
 
-🚀 Features
-✅ Store and display available products
+## 🧰 STL Containers Used
 
-✅ Track recent customers using a deque
+| STL Container         | Purpose                                 |
+|-----------------------|-----------------------------------------|
+| `vector<Product>`     | List of all available products          |
+| `deque<string>`       | Track recently active customers         |
+| `list<Order>`         | Maintain order history with timestamps  |
+| `set<string>`         | Store unique product categories         |
+| `map<int, int>`       | Track stock by product ID               |
+| `multimap<string,Order>` | Map multiple orders to each customer |
+| `unordered_map<string, string>` | Store customer names         |
+| `unordered_set<int>`  | Track unique product IDs                |
 
-✅ Record order history with timestamps
+---
 
-✅ Maintain product stock using maps
+## 🧪 Sample Output
 
-✅ Display product categories using sets
-
-✅ Organize customer data and orders using maps and multimaps
-
-✅ Store unique product IDs using unordered sets
-
-📂 STL Containers Used
-Container	Purpose
-vector<Product>	List of products in the store
-deque<string>	Recent customer activity
-list<Order>	Order history with timestamps
-set<string>	Unique product categories
-map<int, int>	Product stock by ProductID
-multimap<string, Order>	Orders made by each customer
-unordered_map<string, string>	Customer ID to customer name mapping
-unordered_set<int>	Unique product IDs
-
-🧪 Sample Output
-txt
-Copy
-Edit
+```
 Available Products:
 ProductID: 101, Name: Laptop, Category: Electronics
-ProductID: 102, Name: SmarPhone, Category: Electronics
 ...
 
 Recent Customers:
 C005 C001 C002 C003 C004 
 
 Order History:
-OrderID: 1, ProductID: 101, Quantity: 1, CustomerID: C001, Date: Thu Jul  4 15:33:06 2025
+OrderID: 1, ProductID: 101, Quantity: 1, CustomerID: C001, Date: Thu Jul  4 16:21:18 2025
 ...
 
 Product Categories:
 Electronics
-Home
 Kitchen
+Home
 
 ...
-📁 Files
-main.cpp – Contains the entire logic and data structures
+```
 
-README.md – Project overview and instructions
+---
 
-🛠️ How to Compile & Run
-bash
-Copy
-Edit
+## 🛠️ How to Compile & Run
+
+```bash
 g++ -std=c++17 -o store main.cpp
 ./store
-Make sure you're using a C++17-compatible compiler to support ctime usage and structured bindings.
+```
 
-📘 Learning Goals
-This project is great for practicing:
+✅ Make sure your compiler supports **C++17 or later** for `ctime` and STL features.
 
-STL containers and iteration
+---
 
-Structs and object-oriented design in C++
+## 📁 Project Structure
 
-Timestamps and formatted output
+```
+├── main.cpp       # Source code
+└── README.md      # Project documentation
+```
 
-Real-world simulation of store operations
+---
+
+## 🎯 Learning Objectives
+
+- Master various STL containers
+- Understand object-oriented programming with `struct`
+- Work with time functions using `<ctime>`
+- Simulate real-world store operations in code
+
+---
+
+## 👤 Author
+
+**👨‍💻 Priyansh Singh Chaudhary
+📍 Student | Competitive Programmer | C++ Enthusiast
+
+---
